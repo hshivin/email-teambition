@@ -1,0 +1,8 @@
+实现：
+1.获取xxx邮件箱里to bugs的邮件.AnalyzeMail.java 实现.
+2.将截取的email发送往teambition某个任务.
+   在teambition中创建自己的应用 https://account.teambition.com/my/apps
+   获取秘钥 Client Key 、Client Secret
+   获取token  请查阅http://docs.teambition.com/wiki/oauth2#oauth2-authorize
+   获取teambition接收list：_tasklistId
+   调用创建任务接口：/api/tasks

@@ -1,0 +1,40 @@
+<assembly>
+	<id>1.0</id>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<formats>
+		<format>dir</format>
+	</formats>
+	<dependencySets>
+		<dependencySet>
+			<useProjectArtifact>true</useProjectArtifact>
+			<outputDirectory>lib</outputDirectory>
+		</dependencySet>
+	</dependencySets>
+	<fileSets>
+		<fileSet>
+			<outputDirectory>/</outputDirectory>
+			<includes>
+				<include>README.txt</include>
+			</includes>
+		</fileSet>
+
+		<fileSet>
+			<directory>src/main/resources/shell</directory>
+			<outputDirectory>/bin</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/resources/conf</directory>
+			<outputDirectory>/conf</outputDirectory>
+		</fileSet>
+        <fileSet>
+            <directory>src/main/resources/log</directory>
+            <outputDirectory>/log</outputDirectory>
+        </fileSet>
+
+		<fileSet>
+			<directory>src/main/lib</directory>
+			<outputDirectory>/lib</outputDirectory>
+		</fileSet>
+
+	</fileSets>
+</assembly>
